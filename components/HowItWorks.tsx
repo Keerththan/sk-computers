@@ -45,10 +45,7 @@ export default function HowItWorks() {
               <h3 className="text-xl font-semibold text-gray-900 mb-4">{step.title}</h3>
               <p className="text-gray-600 leading-relaxed">{step.description}</p>
 
-              {/* Connection line (except for last item) */}
-              {index < steps.length - 1 && (
-                <div className="hidden md:block absolute top-10 left-1/2 w-full h-0.5 bg-gray-300 transform translate-x-1/2"></div>
-              )}
+              
             </div>
           ))}
         </div>
