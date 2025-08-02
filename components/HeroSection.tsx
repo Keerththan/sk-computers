@@ -9,7 +9,7 @@ export default function HeroSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <div className="space-y-6">
-              <h1 className="text-6xl font-bold leading-tight">
+              <h1 className="text-5xl font-bold leading-tight">
                 <span className="text-teal-600">Expert Device Repair</span>
                 <br />
                 <span className="text-black">with Component-Level</span>
@@ -45,7 +45,7 @@ export default function HeroSection() {
           <div className="relative">
             <div className="relative">
               <Image
-                src="/images/hero-repair-detailed.png"
+                src="/images/Hero.jpg"
                 alt="Component-level laptop repair with precision tools"
                 width={700}
                 height={500}
