@@ -1,8 +1,8 @@
 const statistics = [
-  { number: "200,000+", label: "Devices Repaired", color: "text-teal-600" },
-  { number: "11+", label: "Years Experience", color: "text-blue-600" },
-  { number: "1,000+", label: "Happy Customers", color: "text-green-600" },
-  { number: "4.9", label: "Average Rating", color: "text-yellow-600" },
+  { number: "16+", label: "Years Experience", color: "text-teal-600" },
+  { number: "1000+", label: "Happy Customers", color: "text-blue-600" },
+  { number: "5.0", label: "Average Rating", color: "text-green-600" },
+  { number: "7", label: "Days Open Per Week", color: "text-yellow-600" },
 ]
 
 export default function StatisticsSection() {
@@ -10,8 +10,8 @@ export default function StatisticsSection() {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Journey In Numbers</h2>
-          <p className="text-xl text-gray-600">Trusted by thousands of customers across London</p>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">Achievements</h2>
+          <p className="text-xl text-gray-600">Trusted by customers in Brampton and surrounding areas since 2008</p>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">

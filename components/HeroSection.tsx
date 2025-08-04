@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { Button } from "./ui/button"
-import { Wrench, Calendar } from "lucide-react"
+import { Wrench, Calendar, Star } from "lucide-react"
 
 export default function HeroSection() {
   return (
@@ -9,18 +9,21 @@ export default function HeroSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <div className="space-y-6">
+              <div className="flex items-center gap-2 mb-4">
+                <Star className="w-6 h-6 text-yellow-500 fill-current" />
+                <span className="text-lg font-semibold text-yellow-600">Top Rated Computer Repair in Brampton</span>
+              </div>
+              
               <h1 className="text-5xl font-bold leading-tight">
-                <span className="text-teal-600">Expert Device Repair</span>
+                <span className="text-teal-600">Testing Free!</span>
                 <br />
-                <span className="text-black">with Component-Level</span>
+                <span className="text-black">No Fix! No Fees!</span>
                 <br />
-                <span className="text-black">Precision</span>
+                <span className="text-black">We open 7 days a week</span>
               </h1>
 
               <p className="text-xl text-gray-600 leading-relaxed max-w-lg">
-                Component-level repairs that Apple won't do. Motherboard microsolder specialists fixing devices others
-                write off. Plus everyday phone and laptop repairs done right – with genuine parts, proper tools, and
-                technicians who actually care.
+                Welcome to SK Computers, your premier destination in Brampton for expert laptop, computer, and MacBook repair and service. We pride ourselves on offering an unbeatable combination of affordability, premium quality, and lightning-fast service.
               </p>
             </div>
 
@@ -30,14 +33,14 @@ export default function HeroSection() {
                 className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-4 text-lg flex items-center space-x-2"
               >
                 <Wrench className="w-5 h-5" />
-                <span>Start Your Repair</span>
+                <span>Get a Quote</span>
               </Button>
               <Button
                 size="lg"
                 className="bg-yellow-500 hover:bg-yellow-600 text-black px-8 py-4 text-lg flex items-center space-x-2"
               >
                 <Calendar className="w-5 h-5" />
-                <span>Book Appointment</span>
+                <span>Learn More</span>
               </Button>
             </div>
           </div>
@@ -46,7 +49,7 @@ export default function HeroSection() {
             <div className="relative">
               <Image
                 src="/images/Hero.jpg"
-                alt="Component-level laptop repair with precision tools"
+                alt="SK Computers - Professional computer and laptop repair services in Brampton"
                 width={700}
                 height={500}
                 className="w-full h-auto rounded-lg shadow-2xl"

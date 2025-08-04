@@ -1,15 +1,47 @@
 import { Card, CardContent } from "./ui/card"
-import { Smartphone, Laptop, Tablet, Gamepad2, Headphones, Camera, Watch, Monitor } from "lucide-react"
+import { Laptop, Monitor, Apple, Wrench, Battery, Shield, HardDrive, Smartphone } from "lucide-react"
 
 const services = [
-  { icon: Smartphone, label: "Mobile Phones", desc: "iPhone & Android Repair" },
-  { icon: Laptop, label: "Laptops", desc: "All Brands & Models" },
-  { icon: Tablet, label: "Tablets", desc: "iPad & Android Tablets" },
-  { icon: Gamepad2, label: "Gaming", desc: "Consoles & Handhelds" },
-  { icon: Headphones, label: "Audio Devices", desc: "Headphones & Speakers" },
-  { icon: Camera, label: "Cameras", desc: "Digital & DSLR Cameras" },
-  { icon: Watch, label: "Smartwatches", desc: "Apple Watch & More" },
-  { icon: Monitor, label: "Monitors", desc: "LCD & LED Displays" },
+  { 
+    icon: Laptop, 
+    label: "Laptop Repair", 
+    desc: "Broken Screen, Slow Laptop, Broken Hinges, Tune Up, Software & Hardware Upgrade, No Power On" 
+  },
+  { 
+    icon: Monitor, 
+    label: "Computer Repair", 
+    desc: "Broken Screen, Slow Computer, Tune Up, Software & Hardware Upgrade, No Power On" 
+  },
+  { 
+    icon: Apple, 
+    label: "MacBook & iMac", 
+    desc: "Broken Screen, OS Upgrade, Tune Up, Battery Replacement, Storage Upgrade" 
+  },
+  { 
+    icon: Wrench, 
+    label: "Chip Level Repair", 
+    desc: "Precision and expertise with chip-level repair for comprehensive solutions" 
+  },
+  { 
+    icon: HardDrive, 
+    label: "Soft & Hardware Upgrade", 
+    desc: "Stay up-to-date with the latest technology upgrades" 
+  },
+  { 
+    icon: Shield, 
+    label: "Virus Removal", 
+    desc: "Your go-to for virus eviction and device optimization" 
+  },
+  { 
+    icon: Battery, 
+    label: "Battery Replacement", 
+    desc: "High-quality replacement batteries for your laptop" 
+  },
+  { 
+    icon: Smartphone, 
+    label: "OS Installation", 
+    desc: "Seamless OS installation for peak performance" 
+  },
 ]
 
 export default function ServicesGrid() {
@@ -17,11 +49,11 @@ export default function ServicesGrid() {
     <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">What Can We Fix For You?</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
           <p className="text-xl text-gray-600">Expert repair services for all your devices</p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, index) => (
             <Card
               key={index}

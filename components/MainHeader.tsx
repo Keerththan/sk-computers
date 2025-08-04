@@ -9,35 +9,38 @@ export default function MainHeader() {
           <div className="flex items-center space-x-2">
             <div className="text-3xl font-bold">
               <span className="text-teal-600">SK </span>
-              <span className="text-black">Computer</span>
+              <span className="text-black">COMPUTERS</span>
             </div>
           </div>
 
           <nav className="hidden lg:flex items-center space-x-8">
-            <div className="flex items-center space-x-1 text-gray-700 hover:text-teal-600 cursor-pointer">
-              <span>Repairs & Servicing</span>
-              <ChevronDown className="w-4 h-4" />
-            </div>
             <a href="#" className="text-gray-700 hover:text-teal-600">
-              Tech Wellness
+              Home
             </a>
-            <div className="flex items-center space-x-1 text-gray-700 hover:text-teal-600 cursor-pointer">
-              <span>Business Services</span>
-              <ChevronDown className="w-4 h-4" />
-            </div>
-            <div className="flex items-center space-x-1 text-gray-700 hover:text-teal-600 cursor-pointer">
-              <span>Contact Us</span>
-              <ChevronDown className="w-4 h-4" />
-            </div>
+            <a href="#" className="text-gray-700 hover:text-teal-600">
+              About Us
+            </a>
+            <a href="#" className="text-gray-700 hover:text-teal-600">
+              Services
+            </a>
+            <a href="#" className="text-gray-700 hover:text-teal-600">
+              Downloads
+            </a>
+            <a href="#" className="text-gray-700 hover:text-teal-600">
+              Reviews
+            </a>
+            <a href="#" className="text-gray-700 hover:text-teal-600">
+              Contact Us
+            </a>
           </nav>
 
           <div className="flex items-center space-x-4">
             <Button size="sm" variant="ghost" className="p-2">
               <Search className="w-5 h-5" />
             </Button>
-            <Button className="bg-black text-white hover:bg-gray-800 flex items-center space-x-2">
+            <Button className="bg-teal-600 text-white hover:bg-teal-700 flex items-center space-x-2">
               <Calendar className="w-4 h-4" />
-              <span>Book Your Visit</span>
+              <span>Get a Quote</span>
             </Button>
           </div>
         </div>

@@ -22,16 +22,16 @@ export default function HomePage() {
       <MainHeader />
       <HeroSection />
       <ServicesGrid />
-      <StatisticsSection />
+      {/* <StatisticsSection /> */}
       <WhyChooseSection />
       <RepairOptions />
       <HowItWorks />
       <CustomerTestimonials />
-      <LocationsSection />
+      {/* <LocationsSection /> */}
       <InsideFixfactor />
       <CTASection />
-      <FAQSection />
-      <BlogSection />
+      {/* <FAQSection /> */}
+      {/* <BlogSection /> */}
       <Footer />
       <LiveChat />
     </div>

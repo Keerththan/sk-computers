@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from "lucide-react"
+import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin, Clock } from "lucide-react"
 import { Button } from "./ui/button"
 
 export default function TopHeader() {
@@ -9,20 +9,20 @@ export default function TopHeader() {
           <div className="flex items-center space-x-6">
             <div className="flex items-center space-x-2 text-gray-700">
               <Phone className="w-4 h-4" />
-              <span>020 8543 7088</span>
+              <span>+1 647 409 2045</span>
             </div>
             <div className="flex items-center space-x-2 text-gray-700">
               <Mail className="w-4 h-4" />
-              <span>hello@fixfactor.co.uk</span>
+              <span>info@skcomputers.ca</span>
             </div>
             <div className="hidden md:flex items-center space-x-4">
               <div className="flex items-center space-x-1 text-gray-700">
                 <MapPin className="w-4 h-4" />
-                <span>Wimbledon</span>
+                <span>90, Kennedy South, Brampton, ON</span>
               </div>
               <div className="flex items-center space-x-1 text-gray-700">
-                <MapPin className="w-4 h-4" />
-                <span>Oxford Street</span>
+                <Clock className="w-4 h-4" />
+                <span>Open 7 Days a Week</span>
               </div>
             </div>
           </div>

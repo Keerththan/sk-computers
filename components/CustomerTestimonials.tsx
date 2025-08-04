@@ -3,28 +3,28 @@ import { Star, Quote } from "lucide-react"
 
 const testimonials = [
   {
-    name: "Sarah Johnson",
-    role: "Marketing Manager",
+    name: "James Carvey",
+    role: "Customer",
     rating: 5,
     review:
-      "Excellent service! My laptop was repaired quickly and works perfectly now. The staff was very professional and kept me updated throughout the process. Highly recommend!",
-    avatar: "SJ",
+      "The Quality of service is impeccable. The staff is both knowledgeable and helpful. I have been using the services for six years now and it has been a trouble free and rewarding experience. We need more branches of SK computers in more GTA areas in order to make their services accessible to all computer users- both for professional and personal usage. THANK YOU SK",
+    avatar: "JC",
   },
   {
-    name: "Mike Chen",
-    role: "Software Developer",
+    name: "Ramesh Desai",
+    role: "Customer",
     rating: 5,
     review:
-      "Great experience with Fixfactor. They fixed my gaming laptop's overheating issue and it runs like new. The component-level repair expertise is impressive!",
-    avatar: "MC",
+      "Wonderful experience!!! I had issue with laptop screen. I spoke to Suthan and explained situation that i can come after six pm from my work by the time he closes shop. Also, since laptop is used for university, i required it back same day. I reached his shop after 6:30, he still waited. Not only that he fixed my laptop staying longer time and gave it back on same day. Very helpful and very customer friendly experience 👏👏",
+    avatar: "RD",
   },
   {
-    name: "Emma Wilson",
-    role: "Graphic Designer",
+    name: "Shayini Mathan",
+    role: "Customer",
     rating: 5,
     review:
-      "Professional and reliable service. They repaired my MacBook screen and it looks perfect. Fair pricing and excellent customer service throughout.",
-    avatar: "EW",
+      "Excellent service for a very reasonable price. The man gave me a free assessment and the estimate. He completed the work (fix) in just a few days. He had saved me the cost of buying another laptop. When I mentioned it to another coworker and she told me that she goes to this place for all her tech issues, and she is also very happy with the service.",
+    avatar: "SM",
   },
 ]
 
@@ -33,7 +33,7 @@ export default function CustomerTestimonials() {
     <section className="py-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">What Our Customers Say</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">Customer Reviews</h2>
           <p className="text-xl text-gray-600">Don't just take our word for it - hear from our satisfied customers</p>
         </div>
 
