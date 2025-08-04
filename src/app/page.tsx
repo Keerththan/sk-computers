@@ -24,11 +24,11 @@ export default function HomePage() {
       <ServicesGrid />
       {/* <StatisticsSection /> */}
       <WhyChooseSection />
-      <RepairOptions />
+      {/* <RepairOptions /> */}
       <HowItWorks />
       <CustomerTestimonials />
       {/* <LocationsSection /> */}
-      <InsideFixfactor />
+      {/* <InsideFixfactor /> */}
       <CTASection />
       {/* <FAQSection /> */}
       {/* <BlogSection /> */}
