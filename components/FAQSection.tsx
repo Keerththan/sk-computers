@@ -64,9 +64,9 @@ export default function FAQSection() {
                     <div className="flex items-center justify-between">
                       <h3 className="font-semibold text-gray-900 pr-4">{faq.question}</h3>
                       {openIndex === index ? (
-                        <ChevronUp className="w-5 h-5 text-teal-600 flex-shrink-0" />
+                        <ChevronUp className="w-5 h-5 text-teal-600 flex-shrink-0 rotate-180 transition-all duration-300" />
                       ) : (
-                        <ChevronDown className="w-5 h-5 text-gray-400 flex-shrink-0" />
+                        <ChevronDown className="w-5 h-5 text-gray-400 flex-shrink-0 hover:text-teal-600 hover:scale-110 transition-all duration-300" />
                       )}
                     </div>
                   </button>

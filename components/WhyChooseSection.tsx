@@ -1,80 +1,83 @@
-import { Card, CardContent } from "./ui/card"
-import { DollarSign, Clock, Shield, Truck, CheckCircle, Star, Sparkles } from "lucide-react"
+import { DollarSign, Sparkles, Zap, Award, Heart, Truck, CheckCircle } from "lucide-react"
 
 const features = [
   {
     icon: DollarSign,
     title: "Affordable Excellence",
     description: "Our services are the most cost-effective in town.",
-    gradient: "from-green-500 to-emerald-500",
-    bgGradient: "from-green-50 to-emerald-50"
+    gradient: "from-emerald-400/90 via-emerald-500/90 to-emerald-400/70"
   },
   {
-    icon: Clock,
+    icon: Zap,
     title: "Swift Solutions",
     description: "Experience the fastest service turnaround without compromising quality.",
-    gradient: "from-blue-500 to-cyan-500",
-    bgGradient: "from-blue-50 to-cyan-50"
+    gradient: "from-sky-400/90 via-sky-500/90 to-indigo-400/70"
   },
   {
-    icon: Shield,
+    icon: Award,
     title: "Certified Expertise",
     description: "Trust our certified technicians for top-notch repairs.",
-    gradient: "from-purple-500 to-pink-500",
-    bgGradient: "from-purple-50 to-pink-50"
+    gradient: "from-violet-400/90 via-purple-500/90 to-fuchsia-400/70"
   },
   {
     icon: Truck,
     title: "On-the-Go Convenience",
     description: "We bring our expertise to you.",
-    gradient: "from-orange-500 to-red-500",
-    bgGradient: "from-orange-50 to-red-50"
+    gradient: "from-amber-400/90 via-orange-500/90 to-rose-400/70"
   },
   {
     icon: CheckCircle,
     title: "Complimentary Assurance",
     description: "Benefit from free testing and diagnostics with every service.",
-    gradient: "from-teal-500 to-blue-500",
-    bgGradient: "from-teal-50 to-blue-50"
+    gradient: "from-teal-400/90 via-teal-500/90 to-cyan-400/70"
   },
   {
-    icon: Star,
+    icon: Heart,
     title: "Professional Relationships",
     description: "Building lasting relationships with our customers through quality service.",
-    gradient: "from-yellow-500 to-orange-500",
-    bgGradient: "from-yellow-50 to-orange-50"
+    gradient: "from-yellow-300/90 via-yellow-400/90 to-amber-400/70"
   },
 ]
 
 export default function WhyChooseSection() {
   return (
-    <section className="py-24 bg-gradient-to-br from-gray-50 via-white to-slate-50 relative overflow-hidden">
-      {/* Background decorative elements */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-teal-400/5 to-blue-400/5 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-blue-400/5 to-teal-400/5 rounded-full blur-3xl"></div>
-      
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-teal-500 to-blue-500 text-white px-4 py-2 rounded-full text-sm font-medium mb-6">
-            <Sparkles className="w-4 h-4" />
-            Why Choose Us
+    <section className="relative overflow-hidden py-24">
+      <div className="absolute inset-0 bg-gradient-to-br from-[#0f161d] via-[#1d2b3b] to-[#466384]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.12),_transparent_50%)]" />
+      <div className="absolute inset-0 bg-[#0f161d]/70 mix-blend-overlay" />
+
+      <div className="container relative z-10 mx-auto px-4">
+        <div className="text-center mb-16 space-y-4">
+          <div className="mx-auto inline-flex items-center gap-2 rounded-full bg-white/10 px-5 py-2 text-sm font-medium text-white/90 backdrop-blur-md shadow-lg">
+            <Sparkles className="h-4 w-4 text-amber-300" />
+            <span className="tracking-wide">Why Choose Us</span>
           </div>
-          <h2 className="text-5xl font-bold text-gray-900 mb-6">WHY CHOOSE US?</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">Our commitment is to offer the fastest and most cost-effective repair service in Canada while building professional relationships with our customers.</p>
+          <h2 className="text-4xl font-bold tracking-tight text-white md:text-5xl">Experience The SK Computers Difference</h2>
+          <p className="mx-auto max-w-3xl text-lg text-slate-200/80">
+            Six core promises that keep our community coming back. From cost-effective repairs to white-glove
+            service, we focus on delivering trustworthy experiences at every step.
+          </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
           {features.map((feature, index) => (
-            <Card key={index} className="group relative overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 bg-white">
-              <div className={`absolute inset-0 bg-gradient-to-br ${feature.bgGradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
-              <CardContent className="p-8 relative z-10">
-                <div className={`w-20 h-20 bg-gradient-to-r ${feature.gradient} rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
-                  <feature.icon className="w-10 h-10 text-white" />
+            <div
+              key={index}
+              className="group relative overflow-hidden rounded-3xl border border-white/15 bg-white/10 p-8 shadow-2xl backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:bg-white/15 hover:shadow-[0_20px_45px_rgba(15,22,29,0.45)]"
+            >
+              <div className="pointer-events-none absolute -right-12 -top-10 h-32 w-32 rounded-full bg-white/10 blur-2xl transition-all duration-500 group-hover:opacity-80" />
+              <div className="pointer-events-none absolute -bottom-12 -left-14 h-36 w-36 rounded-full bg-[#466384]/20 blur-3xl" />
+
+              <div className="relative flex flex-col gap-6">
+                <div className={`flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br ${feature.gradient} text-white shadow-xl shadow-black/10 transition-transform duration-500 group-hover:scale-105`}>
+                  <feature.icon className="h-8 w-8" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4 text-center group-hover:text-gray-800 transition-colors">{feature.title}</h3>
-                <p className="text-gray-600 leading-relaxed text-center group-hover:text-gray-700 transition-colors">{feature.description}</p>
-              </CardContent>
-            </Card>
+                <div className="space-y-3">
+                  <h3 className="text-2xl font-semibold text-white">{feature.title}</h3>
+                  <p className="text-base leading-relaxed text-slate-200/85">{feature.description}</p>
+                </div>
+              </div>
+            </div>
           ))}
         </div>
       </div>

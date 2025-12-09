@@ -44,16 +44,16 @@ export default function Footer() {
 
             {/* Contact Info */}
             <div className="space-y-3">
-              <div className="flex items-center space-x-3 text-gray-400">
-                <Phone className="w-4 h-4" />
+              <div className="flex items-center space-x-3 text-gray-400 hover:text-white transition-colors group">
+                <Phone className="w-4 h-4 group-hover:rotate-12 group-hover:scale-110 transition-all duration-300" />
                 <span>+1 647 409 2045</span>
               </div>
-              <div className="flex items-center space-x-3 text-gray-400">
-                <Mail className="w-4 h-4" />
+              <div className="flex items-center space-x-3 text-gray-400 hover:text-white transition-colors group">
+                <Mail className="w-4 h-4 group-hover:rotate-12 group-hover:scale-110 transition-all duration-300" />
                 <span>info@skcomputers.ca</span>
               </div>
-              <div className="flex items-center space-x-3 text-gray-400">
-                <MapPin className="w-4 h-4" />
+              <div className="flex items-center space-x-3 text-gray-400 hover:text-white transition-colors group">
+                <MapPin className="w-4 h-4 group-hover:bounce transition-all duration-300" />
                 <span>90, Kennedy South, Brampton, ON</span>
               </div>
             </div>
@@ -61,7 +61,7 @@ export default function Footer() {
             {/* Business Hours */}
             <div className="space-y-2">
               <div className="flex items-center space-x-3 text-gray-400">
-                <Clock className="w-4 h-4" />
+                <Clock className="w-4 h-4 animate-pulse" />
                 <span className="font-semibold">We open 7 days a week</span>
               </div>
               <div className="text-sm text-gray-500 ml-7">
@@ -76,30 +76,30 @@ export default function Footer() {
               <Button
                 size="sm"
                 variant="outline"
-                className="border-gray-600 text-gray-400 hover:text-white hover:border-white bg-transparent p-2"
+                className="border-gray-600 text-gray-400 hover:text-white hover:border-white bg-transparent p-2 group hover:scale-110 transition-all duration-300"
               >
-                <Facebook className="w-4 h-4" />
+                <Facebook className="w-4 h-4 group-hover:scale-110 transition-transform duration-300" />
               </Button>
               <Button
                 size="sm"
                 variant="outline"
-                className="border-gray-600 text-gray-400 hover:text-white hover:border-white bg-transparent p-2"
+                className="border-gray-600 text-gray-400 hover:text-white hover:border-white bg-transparent p-2 group hover:scale-110 transition-all duration-300"
               >
-                <Twitter className="w-4 h-4" />
+                <Twitter className="w-4 h-4 group-hover:rotate-12 transition-transform duration-300" />
               </Button>
               <Button
                 size="sm"
                 variant="outline"
-                className="border-gray-600 text-gray-400 hover:text-white hover:border-white bg-transparent p-2"
+                className="border-gray-600 text-gray-400 hover:text-white hover:border-white bg-transparent p-2 group hover:scale-110 transition-all duration-300"
               >
-                <Instagram className="w-4 h-4" />
+                <Instagram className="w-4 h-4 group-hover:rotate-12 transition-transform duration-300" />
               </Button>
               <Button
                 size="sm"
                 variant="outline"
-                className="border-gray-600 text-gray-400 hover:text-white hover:border-white bg-transparent p-2"
+                className="border-gray-600 text-gray-400 hover:text-white hover:border-white bg-transparent p-2 group hover:scale-110 transition-all duration-300"
               >
-                <Linkedin className="w-4 h-4" />
+                <Linkedin className="w-4 h-4 group-hover:scale-110 transition-transform duration-300" />
               </Button>
             </div>
           </div>

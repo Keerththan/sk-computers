@@ -1,13 +1,13 @@
 import { Button } from "../components/ui/button"
-import { PhoneCall, Calendar, MessageCircle, Clock, ArrowRight, Sparkles } from "lucide-react"
+import { PhoneCall, Calendar, MessageCircle, Clock, ArrowRight, Sparkles, Headphones, Zap } from "lucide-react"
 
 export default function CTASection() {
   return (
-    <section className="py-24 bg-gradient-to-br from-teal-600 via-blue-600 to-teal-700 text-white relative overflow-hidden">
+    <section className="py-24 bg-[#0f161d] text-white relative overflow-hidden">
       {/* Background Pattern */}
-      <div className="absolute inset-0 bg-gradient-to-r from-teal-600/20 to-blue-600/20"></div>
-      <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-white/10 to-transparent rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-white/10 to-transparent rounded-full blur-3xl"></div>
+      <div className="absolute inset-0 bg-[#2a3c51]/20"></div>
+      <div className="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
       
       <div className="container mx-auto px-4 text-center relative z-10">
         <div className="max-w-4xl mx-auto">
@@ -25,9 +25,9 @@ export default function CTASection() {
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
             <Button 
               size="lg" 
-              className="bg-white text-teal-600 hover:bg-gray-100 px-8 py-4 text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 group"
+              className="bg-white text-[#466384] hover:bg-gray-100 px-8 py-4 text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 group"
             >
-              <PhoneCall className="w-5 h-5 mr-3" />
+              <PhoneCall className="w-5 h-5 mr-3 group-hover:rotate-12 group-hover:scale-110 transition-all duration-300" />
               Call Now: +1 647 409 2045
               <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
@@ -35,9 +35,9 @@ export default function CTASection() {
             <Button
               size="lg"
               variant="outline"
-              className="border-2 border-white text-white hover:bg-white hover:text-teal-600 bg-transparent px-8 py-4 text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 group"
+              className="border-2 border-white text-white hover:bg-white hover:text-[#466384] bg-transparent px-8 py-4 text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 group"
             >
-              <Calendar className="w-5 h-5 mr-3" />
+              <Calendar className="w-5 h-5 mr-3 group-hover:rotate-12 group-hover:scale-110 transition-all duration-300" />
               Get a Quote
               <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
@@ -45,9 +45,9 @@ export default function CTASection() {
             <Button
               size="lg"
               variant="outline"
-              className="border-2 border-white text-white hover:bg-white hover:text-teal-600 bg-transparent px-8 py-4 text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 group"
+              className="border-2 border-white text-white hover:bg-white hover:text-[#466384] bg-transparent px-8 py-4 text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 group"
             >
-              <MessageCircle className="w-5 h-5 mr-3" />
+              <MessageCircle className="w-5 h-5 mr-3 group-hover:rotate-12 group-hover:scale-110 transition-all duration-300" />
               Contact Us
               <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
@@ -68,8 +68,8 @@ export default function CTASection() {
             </div>
           </div>
 
-          <div className="flex items-center justify-center gap-2 text-sm opacity-80 bg-white/10 backdrop-blur-sm rounded-full px-6 py-3 inline-block">
-            <Clock className="w-4 h-4" />
+          <div className="flex items-center justify-center gap-2 text-sm opacity-80 bg-white/10 backdrop-blur-sm rounded-full px-6 py-3">
+            <Clock className="w-4 h-4 animate-pulse" />
             <span>Monday-Saturday: 10 am - 6.30 pm | Sunday: 10 am - 3.00 pm</span>
           </div>
         </div>

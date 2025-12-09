@@ -3,13 +3,13 @@ const steps = [
     step: "1",
     title: "Book Appointment",
     description: "Schedule your repair online or visit our store directly for immediate service",
-    color: "bg-teal-600",
+    color: "bg-[#466384]",
   },
   {
     step: "2",
     title: "Free Diagnosis",
     description: "Our certified experts will diagnose the issue and provide a detailed quote",
-    color: "bg-blue-600",
+    color: "bg-[#466384]",
   },
   {
     step: "3",

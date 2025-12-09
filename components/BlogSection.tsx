@@ -66,12 +66,12 @@ export default function BlogSection() {
 
               <CardContent className="p-6">
                 <div className="flex items-center text-sm text-gray-500 mb-4 space-x-4">
-                  <div className="flex items-center">
-                    <Calendar className="w-4 h-4 mr-1" />
+                  <div className="flex items-center group hover:text-teal-600 transition-colors">
+                    <Calendar className="w-4 h-4 mr-1 group-hover:rotate-12 group-hover:scale-110 transition-all duration-300" />
                     {post.date}
                   </div>
-                  <div className="flex items-center">
-                    <User className="w-4 h-4 mr-1" />
+                  <div className="flex items-center group hover:text-teal-600 transition-colors">
+                    <User className="w-4 h-4 mr-1 group-hover:scale-110 transition-all duration-300" />
                     {post.author}
                   </div>
                 </div>
@@ -84,8 +84,8 @@ export default function BlogSection() {
 
                 <div className="flex items-center justify-between">
                   <span className="text-sm text-gray-500">{post.readTime}</span>
-                  <Button variant="link" className="p-0 text-teal-600 group-hover:text-teal-700">
-                    Read More <ArrowRight className="w-4 h-4 ml-1" />
+                  <Button variant="link" className="p-0 text-teal-600 group-hover:text-teal-700 transition-all duration-300">
+                    Read More <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 group-hover:scale-110 transition-all duration-300" />
                   </Button>
                 </div>
               </CardContent>

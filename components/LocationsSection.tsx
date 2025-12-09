@@ -53,13 +53,13 @@ export default function LocationsSection() {
                 <h3 className="text-2xl font-semibold text-gray-900 mb-6">{location.name}</h3>
 
                 <div className="space-y-4 mb-8">
-                  <div className="flex items-start space-x-3">
-                    <MapPin className="w-5 h-5 text-teal-600 mt-1 flex-shrink-0" />
+                  <div className="flex items-start space-x-3 group hover:bg-gray-50 p-2 rounded-lg transition-all duration-300">
+                    <MapPin className="w-5 h-5 text-teal-600 mt-1 flex-shrink-0 group-hover:bounce group-hover:scale-110 transition-all duration-300" />
                     <p className="text-gray-600">{location.address}</p>
                   </div>
 
-                  <div className="flex items-start space-x-3">
-                    <Clock className="w-5 h-5 text-teal-600 mt-1 flex-shrink-0" />
+                  <div className="flex items-start space-x-3 group hover:bg-gray-50 p-2 rounded-lg transition-all duration-300">
+                    <Clock className="w-5 h-5 text-teal-600 mt-1 flex-shrink-0 group-hover:rotate-12 group-hover:scale-110 transition-all duration-300" />
                     <div className="text-gray-600">
                       {location.hours.split("\n").map((line, i) => (
                         <p key={i}>{line}</p>
@@ -67,8 +67,8 @@ export default function LocationsSection() {
                     </div>
                   </div>
 
-                  <div className="flex items-center space-x-3">
-                    <Phone className="w-5 h-5 text-teal-600 flex-shrink-0" />
+                  <div className="flex items-center space-x-3 group hover:bg-gray-50 p-2 rounded-lg transition-all duration-300">
+                    <Phone className="w-5 h-5 text-teal-600 flex-shrink-0 group-hover:rotate-12 group-hover:scale-110 transition-all duration-300" />
                     <p className="text-gray-600">{location.phone}</p>
                   </div>
                 </div>
