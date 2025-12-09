@@ -4,7 +4,7 @@ import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin, Clock } fr
 const footerSections = {
   services: [
     "Laptop Repair",
-    "Computer Repair", 
+    "Computer Repair",
     "MacBook & iMac Repair",
     "Chip Level Repair",
     "Virus Removal",
@@ -18,7 +18,7 @@ const footerSections = {
 
 const businessHours = [
   "Monday: 10 am - 6.30 pm",
-  "Tuesday: 10 am - 6.30 pm", 
+  "Tuesday: 10 am - 6.30 pm",
   "Wednesday: 10 am - 6.30 pm",
   "Thursday: 10 am - 6.30 pm",
   "Friday: 10 am - 6.30 pm",
@@ -28,43 +28,43 @@ const businessHours = [
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-[#0a0a0f] text-white border-t border-[#1a1a24]">
       <div className="container mx-auto px-4 py-16">
         <div className="grid md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-6">
             <div className="text-3xl font-bold">
-              <span className="text-teal-400">SK</span>
+              <span className="text-[#5a7a9a]">SK</span>
               <span className="text-white">COMPUTERS</span>
             </div>
-            <p className="text-gray-400 leading-relaxed">
-              Your premier destination in Brampton for expert laptop, computer, and MacBook repair and service. 
+            <p className="text-[#a0a0a8] leading-relaxed">
+              Your premier destination in Brampton for expert laptop, computer, and MacBook repair and service.
               We offer affordable excellence with lightning-fast service.
             </p>
 
             {/* Contact Info */}
             <div className="space-y-3">
-              <div className="flex items-center space-x-3 text-gray-400 hover:text-white transition-colors group">
-                <Phone className="w-4 h-4 group-hover:rotate-12 group-hover:scale-110 transition-all duration-300" />
+              <div className="flex items-center space-x-3 text-[#a0a0a8] hover:text-white transition-colors group">
+                <Phone className="w-4 h-4" />
                 <span>+1 647 409 2045</span>
               </div>
-              <div className="flex items-center space-x-3 text-gray-400 hover:text-white transition-colors group">
-                <Mail className="w-4 h-4 group-hover:rotate-12 group-hover:scale-110 transition-all duration-300" />
+              <div className="flex items-center space-x-3 text-[#a0a0a8] hover:text-white transition-colors group">
+                <Mail className="w-4 h-4" />
                 <span>info@skcomputers.ca</span>
               </div>
-              <div className="flex items-center space-x-3 text-gray-400 hover:text-white transition-colors group">
-                <MapPin className="w-4 h-4 group-hover:bounce transition-all duration-300" />
+              <div className="flex items-center space-x-3 text-[#a0a0a8] hover:text-white transition-colors group">
+                <MapPin className="w-4 h-4" />
                 <span>90, Kennedy South, Brampton, ON</span>
               </div>
             </div>
 
             {/* Business Hours */}
             <div className="space-y-2">
-              <div className="flex items-center space-x-3 text-gray-400">
-                <Clock className="w-4 h-4 animate-pulse" />
-                <span className="font-semibold">We open 7 days a week</span>
+              <div className="flex items-center space-x-3 text-[#a0a0a8]">
+                <Clock className="w-4 h-4" />
+                <span className="font-semibold text-white">We open 7 days a week</span>
               </div>
-              <div className="text-sm text-gray-500 ml-7">
+              <div className="text-sm text-[#a0a0a8]/70 ml-7">
                 {businessHours.map((hours, index) => (
                   <div key={index}>{hours}</div>
                 ))}
@@ -72,45 +72,45 @@ export default function Footer() {
             </div>
 
             {/* Social Media */}
-            <div className="flex space-x-4">
+            <div className="flex space-x-3">
               <Button
                 size="sm"
                 variant="outline"
-                className="border-gray-600 text-gray-400 hover:text-white hover:border-white bg-transparent p-2 group hover:scale-110 transition-all duration-300"
+                className="border-[#2a2a35] text-[#a0a0a8] hover:text-white hover:border-[#466384] hover:bg-[#1a1a24] bg-transparent p-2 transition-all duration-300"
               >
-                <Facebook className="w-4 h-4 group-hover:scale-110 transition-transform duration-300" />
+                <Facebook className="w-4 h-4" />
               </Button>
               <Button
                 size="sm"
                 variant="outline"
-                className="border-gray-600 text-gray-400 hover:text-white hover:border-white bg-transparent p-2 group hover:scale-110 transition-all duration-300"
+                className="border-[#2a2a35] text-[#a0a0a8] hover:text-white hover:border-[#466384] hover:bg-[#1a1a24] bg-transparent p-2 transition-all duration-300"
               >
-                <Twitter className="w-4 h-4 group-hover:rotate-12 transition-transform duration-300" />
+                <Twitter className="w-4 h-4" />
               </Button>
               <Button
                 size="sm"
                 variant="outline"
-                className="border-gray-600 text-gray-400 hover:text-white hover:border-white bg-transparent p-2 group hover:scale-110 transition-all duration-300"
+                className="border-[#2a2a35] text-[#a0a0a8] hover:text-white hover:border-[#466384] hover:bg-[#1a1a24] bg-transparent p-2 transition-all duration-300"
               >
-                <Instagram className="w-4 h-4 group-hover:rotate-12 transition-transform duration-300" />
+                <Instagram className="w-4 h-4" />
               </Button>
               <Button
                 size="sm"
                 variant="outline"
-                className="border-gray-600 text-gray-400 hover:text-white hover:border-white bg-transparent p-2 group hover:scale-110 transition-all duration-300"
+                className="border-[#2a2a35] text-[#a0a0a8] hover:text-white hover:border-[#466384] hover:bg-[#1a1a24] bg-transparent p-2 transition-all duration-300"
               >
-                <Linkedin className="w-4 h-4 group-hover:scale-110 transition-transform duration-300" />
+                <Linkedin className="w-4 h-4" />
               </Button>
             </div>
           </div>
 
           {/* Services */}
           <div>
-            <h3 className="font-semibold text-lg mb-6">Services</h3>
+            <h3 className="font-semibold text-lg mb-6 text-white">Services</h3>
             <ul className="space-y-3">
               {footerSections.services.map((service, index) => (
                 <li key={index}>
-                  <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                  <a href="#" className="text-[#a0a0a8] hover:text-white transition-colors">
                     {service}
                   </a>
                 </li>
@@ -120,11 +120,11 @@ export default function Footer() {
 
           {/* Company */}
           <div>
-            <h3 className="font-semibold text-lg mb-6">Company</h3>
+            <h3 className="font-semibold text-lg mb-6 text-white">Company</h3>
             <ul className="space-y-3">
               {footerSections.company.map((item, index) => (
                 <li key={index}>
-                  <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                  <a href="#" className="text-[#a0a0a8] hover:text-white transition-colors">
                     {item}
                   </a>
                 </li>
@@ -134,11 +134,11 @@ export default function Footer() {
 
           {/* Support */}
           <div>
-            <h3 className="font-semibold text-lg mb-6">Support</h3>
+            <h3 className="font-semibold text-lg mb-6 text-white">Support</h3>
             <ul className="space-y-3">
               {footerSections.support.map((item, index) => (
                 <li key={index}>
-                  <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                  <a href="#" className="text-[#a0a0a8] hover:text-white transition-colors">
                     {item}
                   </a>
                 </li>
@@ -148,19 +148,19 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-gray-800 mt-12 pt-8">
+        <div className="border-t border-[#1a1a24] mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-gray-400">
+            <p className="text-[#a0a0a8]">
               © SK COMPUTERS 2008 - 2024 | Your one-stop shop for affordable and efficient tech repairs.
             </p>
             <div className="flex space-x-6">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="#" className="text-[#a0a0a8] hover:text-white transition-colors">
                 Privacy Policy
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="#" className="text-[#a0a0a8] hover:text-white transition-colors">
                 Terms of Service
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="#" className="text-[#a0a0a8] hover:text-white transition-colors">
                 Cookie Policy
               </a>
             </div>
@@ -170,3 +170,4 @@ export default function Footer() {
     </footer>
   )
 }
+

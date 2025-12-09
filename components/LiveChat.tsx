@@ -12,7 +12,7 @@ export default function LiveChat() {
       {!isOpen && (
         <Button
           onClick={() => setIsOpen(true)}
-          className="bg-teal-600 hover:bg-teal-700 text-white rounded-full p-4 shadow-lg hover:shadow-xl transition-all duration-300 flex items-center space-x-2"
+          className="bg-[#466384] hover:bg-[#5a7a9a] text-white rounded-full p-4 transition-all duration-300 flex items-center space-x-2"
         >
           <MessageCircle className="w-6 h-6" />
           <span className="hidden sm:inline">Live Chat!</span>
@@ -20,8 +20,8 @@ export default function LiveChat() {
       )}
 
       {isOpen && (
-        <div className="bg-white rounded-lg shadow-2xl w-80 h-96 border">
-          <div className="bg-teal-600 text-white p-4 rounded-t-lg flex items-center justify-between">
+        <div className="bg-[#111118] rounded-xl border border-[#2a2a35] w-80 h-96 overflow-hidden">
+          <div className="bg-[#466384] text-white p-4 flex items-center justify-between">
             <div className="flex items-center space-x-2">
               <MessageCircle className="w-5 h-5" />
               <span className="font-semibold">Live Chat</span>
@@ -30,16 +30,16 @@ export default function LiveChat() {
               variant="ghost"
               size="sm"
               onClick={() => setIsOpen(false)}
-              className="text-white hover:bg-teal-700 p-1"
+              className="text-white hover:bg-white/10 p-1"
             >
               <X className="w-4 h-4" />
             </Button>
           </div>
-          <div className="p-4 h-80 flex items-center justify-center text-gray-500">
+          <div className="p-4 h-80 flex items-center justify-center text-[#a0a0a8]">
             <div className="text-center">
-              <MessageCircle className="w-12 h-12 mx-auto mb-4 text-gray-300" />
+              <MessageCircle className="w-12 h-12 mx-auto mb-4 text-[#2a2a35]" />
               <p>How can we help you today?</p>
-              <Button className="mt-4 bg-teal-600 hover:bg-teal-700">Start Conversation</Button>
+              <Button className="mt-4 bg-[#466384] hover:bg-[#5a7a9a] text-white">Start Conversation</Button>
             </div>
           </div>
         </div>
@@ -47,3 +47,4 @@ export default function LiveChat() {
     </div>
   )
 }
+
